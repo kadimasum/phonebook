@@ -33,6 +33,21 @@ class ContactTest(unittest.TestCase):
         self.assertEqual(len(Contact.contact_list), len(Contact.find_all_contacts()))
 
 
+    def test_update_contact(self):
+        Contact.clear_all()
+        person_x = Contact("Allan", "Walker", "076563738", "allanwarker@gmail.com")
+        person_x.save()
+
+        Contact.update_first_name(1, "Paulo")
+        Contact.update_email(1, "paulowalker@gmail.com")
+        Contact.update_last_name(1, "Samuel")
+        Contact.update_phone_number(1, "06573467")
+        
+        self.assertEqual(person_x.first_name, "Paulo")
+        self.assertEqual(person_x.email, "paulowalker@gmail.com")
+        self.assertEqual(person_x.last_name, "Samuel")
+        self.assertEqual(person_x.phone_number, "06573467")
+
 
 
 

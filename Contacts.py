@@ -54,6 +54,32 @@ class Contact:
     @classmethod
     def find_all_contacts(cls):
         return cls.contact_list
+
+    @classmethod
+    def update_first_name(cls, id, name):
+        for contact in cls.contact_list:
+            if contact.id == id:
+                contact.first_name = name
+
+    @classmethod
+    def update_last_name(cls, id, name):
+        for contact in cls.contact_list:
+            if contact.id == id:
+                contact.last_name = name
+
+    @classmethod
+    def update_phone_number(cls, id, phone_number):
+        for contact in cls.contact_list:
+            if contact.id == id:
+                contact.phone_number = phone_number
+
+    @classmethod
+    def update_email(cls, id, email):
+        for contact in cls.contact_list:
+            if contact.id == id:
+                contact.email = email
+
+
             
             
 
