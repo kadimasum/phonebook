@@ -1,0 +1,20 @@
+Create a phonebook
+------------------
+
+The user should e able to:
+-Create a contact
+-Save a contact
+-Edit and update a contact
+-Delete a contact by ID
+-Clear all contacts
+-Find contact by ID
+-Find all contacts
+-Copy contact
+
+Pseudocode
+-----------
+-Create a class contact
+-Create an initialization method
+-Create methods to save, edit, delete, find by id, find all contacts and copy contacts
+-Write tests for each method
+
