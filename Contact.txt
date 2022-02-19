@@ -9,12 +9,12 @@ The user should e able to:
 -Clear all contacts
 -Find contact by ID
 -Find all contacts
--Copy contact
+
 
 Pseudocode
 -----------
 -Create a class contact
 -Create an initialization method
--Create methods to save, edit, delete, find by id, find all contacts and copy contacts
+-Create methods to save, edit, delete, find by id, find all contacts etc.
 -Write tests for each method
 
